@@ -19,7 +19,7 @@ client = commands.Bot(command_prefix = 'of!', intents=intents)
 client.remove_command('help')
 # создаем бота и удаляем хелп команду
 
-token = 'Bot token here'
+token = open("token.txt").read()
 
 @client.command(aliases=['premium', 'help'])
 async def crash(ctx):
